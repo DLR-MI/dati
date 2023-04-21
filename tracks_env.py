@@ -266,7 +266,7 @@ class MouseHiddenCheese(gym.Env):
 
         default_tracks = FixedStart(
             timesteps=timesteps, 
-            n_tracks=args.n_tracks, 
+            n_tracks=500, 
             seed=seed,
         )
         self.tracks = tracks if tracks else default_tracks

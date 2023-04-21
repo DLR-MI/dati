@@ -12,8 +12,9 @@ git clone https://github.com/DLR-MI/dati.git
 cd dati
 ```
 and install suitable dependencies:
-- For pip users, you need to `pip install -r requirements.txt`.
-- For conda users `conda env create -f environment.yml` and `conda activate dati`.
+```
+pip install -r requirements.txt
+```
 
 ## Datasets
 The episodes from the synthetic dataset generating the toy examples above can be generated using
@@ -30,7 +31,11 @@ with the optional arguments
 For a real dataset containing tracking data, the respective trajectories must be sampled using the same `track_envs.Tracks` class API. In the paper, we do this with vessel self-reporting position information from [MarineCadastre](https://marinecadastre.gov/AIS/).
 
 ## Train / Test
-To train DATI and evaluate it on the toy examples, just type:
+In order to create visualizations of the training losses, start the visdom server:
+```
+python -m visdom.server
+```
+To train DATI and evaluate it on the toy examples, then just type:
 ```
 python run.py --num_episodes 100 --timesteps 200 --tracks circles
 ```

@@ -51,7 +51,10 @@ python gen_results.py --dir_dati log_dati --dir_ddpg_ti log_ddpg_ti --dir_il log
 ## Results
 DATI outperforms popular baselines in all the tasks of the toy examples. Most interestingly, when applied to a real-world scenario, it can be used to detect abnormal trajectories (with a weighted F1-score of 0.78 in the case studied).
 
-<img src='assets/abnormal.png'> 
+<p align="center">
+  <img src='assets/abnormal.png'> 
+</p>
+
 
 ## Citation
 
